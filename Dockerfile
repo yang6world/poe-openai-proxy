@@ -13,6 +13,7 @@ COPY --from=proxy /app/poe-openai-proxy /app
 
 COPY . .
 RUN pip install -r requirements.txt
+RUN chmod +x /app/startup.sh
 
 EXPOSE 5000
 
