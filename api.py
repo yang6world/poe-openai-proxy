@@ -26,7 +26,7 @@ poe.headers = {
 
 file_path = os.path.abspath(sys.argv[0])
 file_dir = os.path.dirname(file_path)
-config_path = os.path.join(file_dir, "..", "config.toml")
+config_path = os.path.join(file_dir, "config.toml")
 config = toml.load(config_path)
 proxy = config["proxy"]
 timeout = config["api-timeout"] or config["timeout"] or 7
