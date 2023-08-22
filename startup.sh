@@ -1,5 +1,5 @@
 #!/bin/sh
 cd /app
 python api.py &
-poe-openai-proxy &
+/app/poe-openai-proxy &
 wait
